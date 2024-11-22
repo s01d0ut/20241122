@@ -1,55 +1,43 @@
 /* 전체 컨테이너 */
 .box-container {
     width: 100%;
-    max-width: 1986px;
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     background: url('/20241122/today/image/box.jpg') no-repeat center center/cover;
-    padding: 20px;
     box-sizing: border-box;
+    padding: 20px;
 }
 
-/* 도마도 사진 */
+/* 도마도 사진 프레임 */
 .tomato-photo-frame {
     position: relative;
-    width: 80%;
-    max-width: 891px;
+    width: 60%;
+    max-width: 900px;
     height: auto;
     flex-shrink: 0;
-    background: url('/20241122/today/image/도마도.jpg') lightgray 50% / cover no-repeat;
+    background: url('/20241122/today/image/도마도.jpg') no-repeat center/cover;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* 도마도 사진 */
-.tomato-photo {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 /* 도마도 사진 위 프레임 */
 .content-frame {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    max-width: 891px;
-    padding: 58px 44px;
+    width: 100%;
+    padding: 40px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     border-radius: 20px;
     background: rgba(43, 43, 43, 0.70);
     backdrop-filter: blur(5px);
+    color: white;
 }
 
 /* 왼쪽 컨텐츠 - 텍스트와 사진 */
@@ -57,4 +45,85 @@
     display: flex;
     flex-direction: column;
     align-items: center; /* 텍스트와 이미지를 중앙 정렬 */
-    g
+    gap: 20px;
+}
+
+/* 상단 문구 */
+.left-content h1 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* 개인 정보 (이미지와 텍스트) */
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 텍스트 중앙 정렬 */
+    gap: 20px;
+}
+
+.text-content h2,
+.text-content p {
+    color: #FFF;
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.text-content h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.text-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* 오른쪽 컨텐츠 - 폼 입력 */
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.right-content label {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background: rgba(180, 161, 161, 0.50);
+    backdrop-filter: blur(2px);
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #FFF;
+}
+
+/* 전송 버튼 */
+button {
+    padding: 16px 60px;
+    background-color: #FFBCBC;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff9999;
+}
