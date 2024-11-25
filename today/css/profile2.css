@@ -54,6 +54,7 @@ main {
     overflow: hidden;
     backdrop-filter: blur(30px);
     background: url(...) no-repeat center center / cover;
+    background: url(/20241122/today/image/도마도.jpg) no-repeat center center / cover;
     border-radius: 20px;
     background: rgba(43, 43, 43, 0.70);
     backdrop-filter: blur(5px);
