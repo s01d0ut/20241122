@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/20241122/today/image/box.jpg) no-repeat center center / cover;
+    background: url(/today/image/box.jpg) no-repeat center center / cover;
 }
 main {
     width: 1080px;
@@ -94,7 +94,7 @@ form textarea {
 form button {
     border-radius: 8px;
     padding: 12px;
-    background: #f3bfbf;
+    background: #e08888;
     border: none;
     color: #fff;
 }
