@@ -15,21 +15,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/today/image/box.jpg) no-repeat center center / cover;
+    background: url(/today/image/도마도.jpg) no-repeat center center / cover;
 }
 main {
-    width: 1080px;
+    width: 900px;
     height: 816px;
     padding: 20px 60px;
     display: flex;
     flex-flow: column nowrap;
     gap: 20px;
     overflow: hidden;
-    background: rgba(43, 43, 43, 0.7);
+    background: rgba(69, 66, 66, 0.7);
     backdrop-filter: blur(30px);
     border-radius: 20px;
 }
 h1 {
+    color: #ffffffe4;
     font-size: 40px;
     line-height: 1.2;
     text-align: center;
@@ -37,7 +38,7 @@ h1 {
 main > div {
     display: flex;
     flex: 1;
-    gap: 60px;
+    gap: 40px;
 }
 section {
     flex: 1;
@@ -46,17 +47,18 @@ section {
     gap: 10px;
 }
 section h2 {
+    color: #ffffffe4;
     font-size: 30px;
     line-height: 1.2;
 }
 section .profileImg {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
 }
-section > p:first-of-type {
-    color: #ffffffe4;
+section > p {
+    color: #e7dedee4;
     line-height: 1.4;
     flex: 1;
 }
