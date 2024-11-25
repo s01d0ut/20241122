@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>도마도 프로필</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/20241122/today/css/Profile2.css">
 </head>
+
 <body>
-    <div class="box-container">
-        <div class="tomato-photo-frame">
-            <div class="content-frame">
-                <div class="left-content">
-                    <h1>저는 잘 익은 도마도입니다 🍅</h1>
-                    <div class="personal-info">
-                        <div class="tomato-image">
-                            <img src="/20241122/today/image/동마도.jpg" alt="김혜진" class="tomato-photo">
-                        </div>
-                        <div class="text-content">
-                            <h2>김혜진</h2>
-                            <p>
-                                "Don't be like an apple, be like a tomato."<br>
-                                Don't be like an apple, whose outside is red but inside is white. Instead, be like a tomato, which is consistent and genuine both inside and out.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <label for="name">이름</label>
-                    <input type="text" id="name" placeholder="이름을 입력하세요">
-
-                    <label for="address">주소</label>
-                    <input type="text" id="address" placeholder="email을 입력하세요">
-
-                    <label for="feature">특징</label>
-                    <textarea id="feature" placeholder="자신만의 도마도 특징을 입력하세요"></textarea>
-
-                    <button type="submit" class="tomato-button">도마도 박스에 들어가기 🎁</button>
-                </div>
-            </div>
+    <main>
+        <div class="profile-header">
+            <h1>저는 잘 익은 도마도입니다🍅</h1>
         </div>
-    </div>
+        <div class="profile-content">
+            <section class="profile-info">
+                <img src="/20241122/today/image/도마도.jpg" alt="도마도" title="잘 익은 도마도" class="profile-img">
+                <h2>김혜진</h2>
+                <p>"Don't be like an apple, be like a tomato." Don't be like an apple, whose outside is red but inside is white. Instead, be like a tomato, which is consistent and genuine both inside and out.</p>
+                <p>도마도 판매처</p>
+                <div class="contact">
+                    <a href="mailto:tamanta713@gmail.com">tomato@gmail.com</a>
+                    <a href="tel:+821012345678">+821012345678</a>
+                </div>
+            </section>
+            <form action="/" method="post" class="profile-form">
+                <div>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+                </div>
+                <div>
+                    <label for="email">주소</label>
+                    <input type="email" id="email" name="email" placeholder="이메일을 입력하세요" required>
+                </div>
+                <div>
+                    <label for="message">특징</label>
+                    <textarea id="message" name="message" placeholder="자신만의 도마도 특징을 입력하세요" required></textarea>
+                </div>
+                <button type="submit">도마도박스에 들어가기🎁</button>
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>
