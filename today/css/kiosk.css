@@ -68,7 +68,7 @@ p {
 #menu {
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 80px;
     margin-bottom: 40px;
 }
 
@@ -119,6 +119,16 @@ p {
     background: #ffefef;
     cursor: pointer;
     font-size: 16px;
+    color: #453030e4;
+}
+
+/* 버튼에 마우스를 올렸을 때 */
+#menu button:hover {
+    background: #fcbaba; /* 호버 시 더 진한 색상 */
+}
+/* 버튼을 클릭했을 때 */
+#menu button:active {
+    background: #f27070; /* 클릭 시 더 진한 색상 */
     color: #453030e4;
 }
 
