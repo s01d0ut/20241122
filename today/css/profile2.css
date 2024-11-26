@@ -20,7 +20,7 @@ body {
 main {
     width: 900px;
     height: 816px;
-    padding: 60px 40px 20px; /* 상단 여백을 더 크게 설정 (60px 상단, 20px 하단) */
+    padding: 50px 40px 30px; /* 상단 여백을 더 크게 설정 (60px 상단, 20px 하단) */
     display: flex;
     flex-flow: column nowrap;
     gap: 40px;
